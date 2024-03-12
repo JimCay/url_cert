@@ -13,7 +13,7 @@ pub struct DomainCert();
 
 impl DomainCert {
 
-    pub fn from_url(mut url_str: &str,time_out: u64) -> Result<String, std::io::Error> {
+    pub fn from_url(url_str: &str,time_out: u64) -> Result<String, std::io::Error> {
 
         let url_string;
         if !url_str.starts_with("https") {
